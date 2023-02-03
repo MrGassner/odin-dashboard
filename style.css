@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    width: 100vw;
     height: 100vh;
 }
 ol, ul {
@@ -72,9 +71,11 @@ html {
     background-color: #0f0f0f;
     grid-row: 1 / 4;
     text-align: center;
+    height: 100vh;
 }
 
 nav {
+    margin: 10px 0;
     display: grid;
     gap: 10px;
     text-align: center;
@@ -116,12 +117,23 @@ button:hover {
 header {
     background-color: #0f0f0f;
     color: white;
-    height: 70px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    margin: 0 10px;
 }
 
 .search_bar {
+    justify-self: end;
     display: grid;
-    grid-template-columns: 30px minmax(100px, 400px) 50px;
+    grid-template-columns: 30px minmax(100px, 300px) 50px;
     align-items: center;
     justify-content: center;
 }
@@ -130,14 +142,14 @@ header {
     border: 1px solid rgb(44, 44, 44);
     border-right: none;
     padding: 5px;
-    height: 30px;
+    height: 35px;
     border-bottom-left-radius: 15px;
     border-top-left-radius:  15px;
     margin: 1px;
 }
 
 .search {
-    height: 30px;
+    height: 35px;
     background-color: #0f0f0f;
     border: 1px solid rgb(44, 44, 44);
     border-left: none;
@@ -152,8 +164,17 @@ header {
     margin: 0;
     border-top-right-radius: 15px;
     border-end-end-radius: 15px;
-    height: 30px;
+    height: 35px;
 }
+
+.search_button:hover {
+    background-color: rgba(44, 44, 44, 0.8);
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+
+}
+
 
 /* main  */
 
