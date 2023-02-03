@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     height: 100vh;
+    background-color: #0f0f0f;
 }
 ol, ul {
 	list-style: none;
@@ -59,8 +60,8 @@ html {
 /* general styles */
 .container {
     display: grid;
-    grid-template-columns: 70px 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 70px 2fr 1fr;
+    grid-template-rows: 60px 1fr;
 }
 
 /* sidebar  */
@@ -115,9 +116,10 @@ button:hover {
 
 /* header */
 header {
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
     background-color: #0f0f0f;
     color: white;
-    height: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -172,10 +174,75 @@ header {
     border-radius: 0;
     border-top-right-radius: 15px;
     border-end-end-radius: 15px;
+}
 
+/* main  */
+main {
+    color: whitesmoke;
+    grid-row: 2 / 4;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 10px;
+    
+}
+
+main > section {
+    background-color: rgba(44, 44, 44, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 30px 1fr 30px;
+    column-gap: 10px;
 }
 
 
-/* main  */
+section > h2 {
+    font-size: 1.5rem;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    justify-self: end;
+}
 
-/* footer  */
+section > img {
+    border: 1px solid red;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    height: 200px;
+}
+
+section > p {
+
+    grid-column: 2;
+    grid-row: 2;
+    padding: 5px;
+}
+
+.page_links {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+.github,
+.enter_page {
+    background-color: #0f0f0f;;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.github:hover,
+.enter_page:hover {
+    background-color: rgba(17, 17, 17, 0.8);
+}
+
+
+/* aside  */
+aside {
+    grid-row: 2 / 4;
+    border: 1px solid blue;
+}
