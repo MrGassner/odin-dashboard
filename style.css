@@ -66,9 +66,10 @@ html {
 
 /* sidebar  */
 .sidebar {
+    font-size: 1rem;
+    color: white;
     list-style: none;
     background-color: #0f0f0f;
-    color: white;
     grid-row: 1 / 4;
     text-align: center;
 }
@@ -111,9 +112,48 @@ button:hover {
     background-color: rgb(44, 44, 44);
 }
 
-
-
 /* header */
+header {
+    background-color: #0f0f0f;
+    color: white;
+    height: 70px;
+}
+
+.search_bar {
+    display: grid;
+    grid-template-columns: 30px minmax(100px, 400px) 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_image {
+    border: 1px solid rgb(44, 44, 44);
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius:  15px;
+    margin: 1px;
+}
+
+.search {
+    height: 30px;
+    background-color: #0f0f0f;
+    border: 1px solid rgb(44, 44, 44);
+    border-left: none;
+    outline: none;
+    padding: 0;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.search_button {
+    background-color: rgb(44, 44, 44);
+    padding: 2px;
+    margin: 0;
+    border-top-right-radius: 15px;
+    border-end-end-radius: 15px;
+    height: 30px;
+}
 
 /* main  */
 
