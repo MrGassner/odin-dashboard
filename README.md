@@ -1,4 +1,14 @@
-# odin-dashboard
+# The Odin Project: Admin Dashboard
 
-Page designed as part of Odin's project. I decided to create this page to showcase as an index to the other
-projects already created. The design choice was created using a similar template as Youtube. 
+Based on Youtube basic layout. I designed this page as an index to the previous projects of the Odin Lessons,
+with buttons that link to the preview of the pages, and to the github repository
+
+
+## Projects on dashboard
+
+* Calculator
+* Etch-A-Sketch
+* Landing Page
+* Recipes
+* Rock Paper Scissors
+* Sign-up Form
